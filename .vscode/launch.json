@@ -5,7 +5,7 @@
         "name": "Run Hello World",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/hello",
+        "program": "${workspaceFolder}/main",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
