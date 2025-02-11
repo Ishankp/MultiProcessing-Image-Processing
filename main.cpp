@@ -1,13 +1,18 @@
+#include <opencv2/opencv.hpp>
+#include <iostream>
 
-#include <iostream> 
-//#include <opencv2/opencv.hpp> // this folder will enable the user to manipulate images
-
-
-//Purpose: The main function in this code will act as the user interface and the basis of how we are going
-//to test out different functions.
 int main() {
-    // user will do image input we will be working with simple black and white images to start this project off
-    std::cout << "Hello, World!" << std::endl;
-    return 0; // Indicate successful execution
-    
+    // Load an image
+    cv::Mat img = cv::imread("image.jpg");
+
+    if (img.empty()) {
+        std::cout << "Could not open or find the image!" << std::endl;
+        return -1;
+    }
+
+    // Show the image in a window
+    cv::imshow("Display window", img);
+    cv::waitKey(0);
+
+    return 0;
 }
