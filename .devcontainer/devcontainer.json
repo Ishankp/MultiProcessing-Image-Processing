@@ -6,5 +6,6 @@
   },
   "extensions": [
     "ms-vscode.cpptools"
-  ]
+  ],
+  "postCreateCommand": "./setup.sh"
 }
