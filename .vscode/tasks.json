@@ -9,7 +9,12 @@
                 "-g",
                 "main.cpp",
                 "-o",
-                "main"
+                "main",
+                "-I", "/workspaces/MultiProcessing-Image-Processing/vcpkg/installed/x64-linux/include", // OpenCV include path
+                "-L", "/workspaces/MultiProcessing-Image-Processing/vcpkg/installed/x64-linux/lib",    // OpenCV lib path
+                "-lopencv_core", // Link against OpenCV core library
+                "-lopencv_imgproc", // Link against OpenCV image processing library
+                "-lopencv_highgui"  // Link against OpenCV highgui library (for image display, etc.)
             ],
             "group": "build",
             "problemMatcher": [
@@ -25,7 +30,12 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I", "/workspaces/MultiProcessing-Image-Processing/vcpkg/installed/x64-linux/include", // OpenCV include path
+                "-L", "/workspaces/MultiProcessing-Image-Processing/vcpkg/installed/x64-linux/lib",    // OpenCV lib path
+                "-lopencv_core", // Link against OpenCV core library
+                "-lopencv_imgproc", // Link against OpenCV image processing library
+                "-lopencv_highgui"  // Link against OpenCV highgui library
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -48,7 +58,12 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I", "/workspaces/MultiProcessing-Image-Processing/vcpkg/installed/x64-linux/include", // OpenCV include path
+                "-L", "/workspaces/MultiProcessing-Image-Processing/vcpkg/installed/x64-linux/lib",    // OpenCV lib path
+                "-lopencv_core", // Link against OpenCV core library
+                "-lopencv_imgproc", // Link against OpenCV image processing library
+                "-lopencv_highgui"  // Link against OpenCV highgui library
             ],
             "options": {
                 "cwd": "${fileDirname}"
