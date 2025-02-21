@@ -13,14 +13,9 @@ int main() {
         return -1;
     }
 
-    // Create a window to display the image
-    cv::imshow("Loaded Image", image);
-
-    // Wait for a key press
-    cv::waitKey(0);
-
-    // Close all OpenCV windows
-    cv::destroyAllWindows();
+    // Save the image to a new file (this can be downloaded)
+    cv::imwrite("output_image.jpg", image);
+    std::cout << "Image saved as output_image.jpg" << std::endl;
 
     return 0;
 }
