@@ -1,6 +1,0 @@
-{
-  "name": "C++ OpenCV Dev",
-  "image": "mcr.microsoft.com/devcontainers/cpp:latest",
-  "features": {},
-  "postCreateCommand": "bash .devcontainer/install_opencv.sh"
-}
